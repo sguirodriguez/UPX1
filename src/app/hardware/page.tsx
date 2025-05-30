@@ -125,7 +125,7 @@ export default function SimulacaoPage() {
                     <div className="flex items-center justify-between mb-4">
                         <h2 className="text-2xl font-bold text-gray-900">Simulação no Tinkercad</h2>
                         <a
-                            href="https://www.tinkercad.com/things/your-circuit-id"
+                            href="https://www.tinkercad.com/things/iv2uOL63QHX-semaforo-inteligente-p2"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors"
