@@ -1,9 +1,17 @@
-'use client'
+'use client';
 
-import Link from "next/link";
-import { ArrowRight, TrafficCone, Car, Ambulance, Brain, LineChart, AlertTriangle } from "lucide-react";
-import Logo from "@/components/Logo";
-import { motion } from "framer-motion";
+import Link from 'next/link';
+import {
+  ArrowRight,
+  TrafficCone,
+  Car,
+  Ambulance,
+  Brain,
+  LineChart,
+  AlertTriangle,
+} from 'lucide-react';
+import Logo from '@/components/Logo';
+import { motion } from 'framer-motion';
 
 export default function HomePage() {
   return (
@@ -34,8 +42,9 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"
             >
-              Transformando o trânsito urbano através de semáforos inteligentes que se adaptam
-              em tempo real ao fluxo de veículos, priorizando emergências e otimizando a mobilidade.
+              Transformando o trânsito urbano através de semáforos inteligentes
+              que se adaptam em tempo real ao fluxo de veículos, priorizando
+              emergências e otimizando a mobilidade.
             </motion.p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
@@ -77,8 +86,9 @@ export default function HomePage() {
               O Problema
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Os semáforos tradicionais não se adaptam à demanda real do tráfego,
-              causando congestionamentos, desperdício de tempo e riscos à segurança.
+              Os semáforos tradicionais não se adaptam à demanda real do
+              tráfego, causando congestionamentos, desperdício de tempo e riscos
+              à segurança.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -92,10 +102,12 @@ export default function HomePage() {
               <div className="bg-red-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <TrafficCone className="w-6 h-6 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Congestionamentos</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Congestionamentos
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Semáforos fixos causam filas desnecessárias e aumentam o tempo de deslocamento,
-                impactando a qualidade de vida dos cidadãos.
+                Semáforos fixos causam filas desnecessárias e aumentam o tempo
+                de deslocamento, impactando a qualidade de vida dos cidadãos.
               </p>
             </motion.div>
             <motion.div
@@ -108,10 +120,12 @@ export default function HomePage() {
               <div className="bg-yellow-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <AlertTriangle className="w-6 h-6 text-yellow-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Riscos à Segurança</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Riscos à Segurança
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Falta de priorização para veículos de emergência e tempos inadequados
-                aumentam os riscos de acidentes.
+                Falta de priorização para veículos de emergência e tempos
+                inadequados aumentam os riscos de acidentes.
               </p>
             </motion.div>
             <motion.div
@@ -124,17 +138,22 @@ export default function HomePage() {
               <div className="bg-orange-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <Car className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Ineficiência</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Ineficiência
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Tempos fixos causam paradas desnecessárias, aumentando o consumo de combustível
-                e a poluição ambiental.
+                Tempos fixos causam paradas desnecessárias, aumentando o consumo
+                de combustível e a poluição ambiental.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      <section id="solucao" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section
+        id="solucao"
+        className="py-20 bg-gradient-to-b from-blue-50 to-white"
+      >
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,8 +166,9 @@ export default function HomePage() {
               Nossa Solução
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Semáforos inteligentes que se adaptam em tempo real ao fluxo de veículos,
-              priorizando emergências e otimizando a mobilidade urbana.
+              Semáforos inteligentes que se adaptam em tempo real ao fluxo de
+              veículos, priorizando emergências e otimizando a mobilidade
+              urbana.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -162,7 +182,9 @@ export default function HomePage() {
               <div className="bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <Brain className="w-6 h-6 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">IA Adaptativa</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                IA Adaptativa
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Sistema neural que aprende e se adapta aos padrões de tráfego,
                 otimizando os tempos dos semáforos em tempo real.
@@ -178,7 +200,9 @@ export default function HomePage() {
               <div className="bg-purple-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <Ambulance className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Prioridade Emergencial</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Prioridade Emergencial
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Detecção automática de veículos de emergência, garantindo
                 passagem prioritária quando necessário.
@@ -194,10 +218,12 @@ export default function HomePage() {
               <div className="bg-indigo-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <LineChart className="w-6 h-6 text-indigo-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Análise de Dados</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Análise de Dados
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Geração de relatórios e insights para melhorias contínuas
-                no sistema de tráfego.
+                Geração de relatórios e insights para melhorias contínuas no
+                sistema de tráfego.
               </p>
             </motion.div>
           </div>
@@ -217,7 +243,8 @@ export default function HomePage() {
               Resultados Comprovados
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Veja os números que comprovam a eficácia do NeuroSinal em melhorar a mobilidade urbana.
+              Veja os números que comprovam a eficácia do NeuroSinal em melhorar
+              a mobilidade urbana.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -239,7 +266,9 @@ export default function HomePage() {
               className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg text-center"
             >
               <div className="text-4xl font-bold text-blue-600 mb-2">35%</div>
-              <p className="text-gray-600">Menor tempo de resposta para emergências</p>
+              <p className="text-gray-600">
+                Menor tempo de resposta para emergências
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -277,22 +306,22 @@ export default function HomePage() {
               Pronto para revolucionar o trânsito da sua cidade?
             </h2>
             <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-              Experimente nossa simulação e veja como o NeuroSinal pode transformar
-              a mobilidade urbana da sua região. Comece agora mesmo!
+              Experimente nossa simulação e veja como o NeuroSinal pode
+              transformar a mobilidade urbana da sua região. Comece agora mesmo!
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/simulacao"
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Iniciar Simulação Grátis
+                Experimente agora
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 href="/hardware"
-                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-xl font-medium hover:bg-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Conhecer Hardware
+                Ver Componentes
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
