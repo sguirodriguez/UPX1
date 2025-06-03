@@ -48,10 +48,10 @@ export default function HomePage() {
             </motion.p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/simulacao"
+                href="/pitch"
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Experimente Agora
+                Vídeo Pitch
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
@@ -311,10 +311,10 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/simulacao"
+                href="/pitch"
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Experimente agora
+                Vídeo Pitch
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
