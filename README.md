@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚦 Semáforo Inteligente UPX1
 
-## Getting Started
+Um sistema de semáforo inteligente que utiliza sensores e tecnologia IoT para melhorar a segurança e eficiência do trânsito, especialmente para pedestres.
 
-First, run the development server:
+## 📋 Sobre o Projeto
+
+O Semáforo Inteligente é uma solução inovadora que combina hardware e software para criar um sistema de controle de tráfego mais seguro e eficiente. O projeto utiliza sensores PIR para detectar a presença de pedestres e um botão para solicitar a travessia, tornando o processo mais seguro e acessível.
+
+### 🎯 Objetivos
+
+- Melhorar a segurança dos pedestres
+- Reduzir acidentes de trânsito
+- Aumentar a acessibilidade para pessoas com deficiência
+- Otimizar o fluxo de tráfego
+- Fornecer feedback visual e sonoro para os usuários
+
+## 🛠️ Tecnologias Utilizadas
+
+### Hardware
+
+- Arduino Uno R3
+- Display LCD 16x2
+- Sensor PIR
+- LEDs (Semáforo veicular e pedestre)
+- Buzzer
+- Botão de solicitação
+- Resistores 220Ω
+- Jumpers e protoboard
+
+### Software
+
+- Arduino IDE
+- C/C++
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+
+## 🔧 Funcionalidades
+
+### Principais Características
+
+- Detecção automática de pedestres via sensor PIR
+- Botão de solicitação de travessia
+- Display LCD para mensagens informativas
+- Alertas sonoros para deficientes visuais
+- Sistema modular e expansível
+- Interface web para monitoramento
+
+### Benefícios
+
+- Maior segurança para pedestres
+- Redução de acidentes
+- Melhor acessibilidade
+- Eficiência no fluxo de trânsito
+- Baixo custo de implementação
+
+## 📦 Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/sguirodriguez/UPX1.git
+cd UPX1
+```
+
+2. Instale as dependências do frontend:
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. Configure o Arduino:
+
+   - Instale o [Arduino IDE](https://www.arduino.cc/en/software)
+   - Abra o arquivo `arduino/semaforo.ino`
+   - Instale as bibliotecas necessárias:
+     - LiquidCrystal
+     - Wire
+
+4. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔌 Conexões do Hardware
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Arduino Uno R3
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- D2 → Sensor PIR (Detecção de movimento)
+- D3 → Botão (Solicitação de travessia)
+- D4 → Buzzer (Alertas sonoros)
+- D8-D12 → Semáforos (Controle dos LEDs)
+- A0-A5 → LCD (Display 16x2)
 
-## Learn More
+### Display LCD 16x2
 
-To learn more about Next.js, take a look at the following resources:
+- RS, E, D4-D7 → Arduino A0-A5 (Comunicação)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Sensor PIR
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- OUT → Arduino D2 (Sinal de detecção)
 
-## Deploy on Vercel
+### Semáforos LED
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- LEDs → Arduino D8-D12 (Controle)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎥 Demonstração
+
+Assista à apresentação do projeto no YouTube:
+[Link do Vídeo](https://www.youtube.com/watch?v=mHe_1HtHqzw)
+
+## 🚀 Como Usar
+
+1. **Simulação no Tinkercad**
+
+   - Acesse a [simulação no Tinkercad](https://www.tinkercad.com/things/iv2uOL63QHX-semaforo-inteligente-p2)
+   - Observe o funcionamento automático do semáforo
+   - Teste o botão de solicitação de travessia
+   - Simule a detecção de movimento com o sensor PIR
+   - Verifique as mensagens no display LCD
+   - Escute os alertas sonoros
+
+2. **Implementação Física**
+   - Monte o circuito conforme o diagrama
+   - Carregue o código no Arduino
+   - Conecte a alimentação
+   - O sistema iniciará automaticamente
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Contribuição
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
+3. Faça o Commit das suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Faça o Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📞 Contato
+
+Para mais informações ou suporte, acesse o [repositório no GitHub](https://github.com/sguirodriguez/UPX1).
+
+---
+
+Desenvolvido com ❤️ por [Seu Nome]

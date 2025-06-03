@@ -294,6 +294,169 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div className="max-w-7xl mx-auto px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Nossa Equipe
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Conheça os talentos por trás do Semáforo Inteligente, uma equipe
+              apaixonada por inovação e tecnologia.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* João Victor */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100"
+            >
+              <div className="bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👨‍💼</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                João Victor
+              </h3>
+              <p className="text-blue-600 font-medium mb-4">
+                Gerente de Projetos
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Gerencia prazos, assegura a comunicação entre os membros da
+                equipe e garante que o projeto esteja alinhado com os objetivos
+                estabelecidos.
+              </p>
+            </motion.div>
+
+            {/* Ana Luiza */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100"
+            >
+              <div className="bg-purple-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👩‍💼</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                Ana Luiza
+              </h3>
+              <p className="text-purple-600 font-medium mb-4">
+                Analista de Requisitos
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Identifica os requisitos para desenvolver o projeto, garantindo
+                a eficiência e implementação correta das soluções.
+              </p>
+            </motion.div>
+
+            {/* Thaís Arêas */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-pink-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-100"
+            >
+              <div className="bg-pink-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👩‍🔬</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                Thaís Arêas
+              </h3>
+              <p className="text-pink-600 font-medium mb-4">
+                Analista de Viabilidade
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Atua na análise de viabilidade técnica, econômica e ambiental,
+                buscando otimizar recursos e garantia do sucesso do projeto.
+              </p>
+            </motion.div>
+
+            {/* Francisco Henrique */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-indigo-100"
+            >
+              <div className="bg-indigo-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👨‍🏫</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                Francisco Henrique
+              </h3>
+              <p className="text-indigo-600 font-medium mb-4">Scrum Master</p>
+              <p className="text-gray-600 leading-relaxed">
+                Atua como facilitador do time assegurando que a equipe esteja
+                trabalhando de forma eficiente em direção aos objetivos do
+                projeto.
+              </p>
+            </motion.div>
+
+            {/* José Roberto */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100"
+            >
+              <div className="bg-orange-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👨‍🔧</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                José Roberto
+              </h3>
+              <p className="text-orange-600 font-medium mb-4">
+                Analista de Suporte e Manutenção
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Atua de suporte pós-implantação, assegurando que qualquer
+                problema ou bug identificado seja resolvido de forma eficiente e
+                rápida.
+              </p>
+            </motion.div>
+
+            {/* Samuel Rodrigues */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100"
+            >
+              <div className="bg-green-100 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👨‍💻</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                Samuel Rodrigues
+              </h3>
+              <p className="text-green-600 font-medium mb-4">
+                Desenvolvedor de Algoritmos
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Atua na criação e soluções para sistemas utilizando lógica e
+                programação, trabalha com dados, busca entender padrões e
+                melhora processos.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-8 text-center">
           <motion.div
