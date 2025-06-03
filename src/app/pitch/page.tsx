@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Logo from '@/components/Logo';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 export default function PitchPage() {
   return (
@@ -17,9 +17,7 @@ export default function PitchPage() {
                 href="/hardware"
                 className="inline-flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
               >
-                <ArrowLeft className="w-4 h-4" />
-                <span className="hidden sm:inline">Voltar para Hardware</span>
-                <span className="sm:hidden">Hardware</span>
+                <span>Hardware</span>
               </Link>
             </div>
           </div>
