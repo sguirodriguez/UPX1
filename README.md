@@ -132,24 +132,4 @@ Assista à apresentação do projeto no YouTube:
    - Conecte a alimentação
    - O sistema iniciará automaticamente
 
-## 📝 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👥 Contribuição
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
-3. Faça o Commit das suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Faça o Push para a Branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📞 Contato
-
-Para mais informações ou suporte, acesse o [repositório no GitHub](https://github.com/sguirodriguez/UPX1).
-
----
-
-Desenvolvido com ❤️ por [Seu Nome]
